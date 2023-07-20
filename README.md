@@ -1,5 +1,7 @@
 # Graph Neural Networks for Predicting Structural Stability of Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub>
 
+![graphical abstact](grabs.png)
+
 Computational modeling of disordered crystal structures is essential for the study of composition-structure-property relations for many families of functional materials.
 Efficient and reliable solutions are of great interest due to the promising reduction of labor-intensive calculations through data-driven prediction of target properties.
 One of the modern problems directly related to this topic is the enhancement of phase stability of functional materials with the required properties.
