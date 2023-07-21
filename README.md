@@ -12,12 +12,18 @@ bibtex citation
 
 Dataset
 -----
+| **Sample** | **Size** |
+|:----------:|:--------:|
+|  train_val |    142   |
+|    test    |   73760  |
+|  inference |    60    |
 
 Скрипт
 -----
 
 
-Models
+Links
 -----
+* [Open Catalyst Project](https://opencatalystproject.org/index.html)
 * [Schnet](https://arxiv.org/abs/1706.08566)
 * [Allegro](https://arxiv.org/abs/2204.05249)
