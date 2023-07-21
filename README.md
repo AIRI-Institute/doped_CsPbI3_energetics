@@ -5,10 +5,9 @@ This repository contains various neural networks predictions on Cd- and Zn-doped
 More details can be found in the [paper](link).
 
 
-Citation
------
+If you are using this dataset in your research paper, please cite us as
 ```
-bibtexcitation
+bibtex citation
 ```
 
 Dataset
