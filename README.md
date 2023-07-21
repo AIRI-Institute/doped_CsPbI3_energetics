@@ -15,8 +15,8 @@ Dataset
 | **Sample** | **Size** |
 |:----------:|:--------:|
 |  train_val |    142   |
-|    test    |   73760  |
-|  inference |    60    |
+|    test    |    60    |
+|  inference |   73760  |
 
 Скрипт
 -----
