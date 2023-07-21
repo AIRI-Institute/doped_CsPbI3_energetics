@@ -1,4 +1,4 @@
-# Graph Neural Networks for Predicting Structural Stability of Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub>
+# Doped CsPbI<sub>3</sub> energetics: Dataset for "Graph Neural Networks for Predicting Structural Stability of Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub>"
 
 ![graphical abstact](grabs.png)
 
