@@ -14,12 +14,14 @@ Dataset
 -----
 The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and various neural networks predictions. Two models, *SchNet* and *Allegro*^ were trained on different subsamples and with/without pretraining to illustrate ???
 
+<div align="center">
+  
 |   pretraining mode  | both-both       | element-both    |
 |-------|-----------------|-----------------|
 | non-pretrained  | [SchNet](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_schnet_non-pr.pkl.gz), [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_non-pr.pkl.gz) | [SchNet](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_schnet_non-pr.pkl.gz), [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_non-pr.pkl.gz) |
 | [OCP](https://opencatalystproject.org/index.html)   | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_ocpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_ocpr.pkl.gz)           |
 | [aflow](https://www.aflowlib.org) | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_aflowpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_aflowpr.pkl.gz)           |
-
+</div>
 <!--
 | **Sample** | **Size** |
 |:----------:|:--------:|
@@ -36,6 +38,8 @@ Models
 -----
 * [SchNet: A continuous-filter convolutional neural network for modeling quantum interactions](https://arxiv.org/abs/1706.08566)
 * [Learning Local Equivariant Representations for Large-Scale Atomistic Dynamics (Allegro)](https://arxiv.org/abs/2204.05249)
+
+<div align="center">
 
 | ordinal number | column tag | content description |
 | --- | --- | --- |
@@ -62,3 +66,4 @@ Models
 |68| formation_energy_pa_DFT | formation energy per atom (in eV/atom) for the DFT-relaxed structure |
 |69-116| val_i_DFT | boolean flag showing whether the configuration is in the $i^{th}$ validation subset |
 |117| inWhichPart | tr_val, test, or inference (corresponds to the data usage within the approach proposed)|
+</div>
