@@ -1,6 +1,7 @@
 # Cd- and Zn-doped CsPbI<sub>3</sub> Energetics: DFT-derived Properties and GNN-based Predictions
 
 This repository contains various neural networks predictions on Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> dataset.
+
 <!--
 More details can be found in the [paper](link).
 
@@ -9,6 +10,8 @@ If you are using this dataset in your research paper, please cite us as
 bibtex citation
 ```
 -->
+
+![graphical abstract](figures/toc.png)
 
 Dataset
 -----
