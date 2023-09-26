@@ -1,6 +1,6 @@
 # Cd- and Zn-doped CsPbI<sub>3</sub> Energetics: DFT-derived Properties and GNN-based Predictions
 
-Cd- and Zn-doping of inorganic lead halide perovskite CsPbI3 aims to discover new sustainable semiconductor, promising for
+Cd- and Zn-doping of inorganic lead halide perovskite CsPbI<sub>3</sub> aims to discover new sustainable semiconductor, promising for
 optoelectronic devices. This process can be naturally represented as a computational modeling of disordered crystals. Looking in more detail, the key component of such simulations is an evaluation of thermodynamic properties of the wide range of material-candidates, forming an enhanced space. Due to the space size, classical density functional theory (DFT) calculations were supplemented with a modern graph neural networks approach.
 <!--
 More details can be found in the [paper](link).
