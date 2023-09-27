@@ -1,6 +1,6 @@
 # Cd- and Zn-doped CsPbI<sub>3</sub> Energetics: DFT-derived Properties and GNN-based Predictions
 
-Doping of inorganic lead halide perovskite CsPbI<sub>3</sub> aims to discover new stable semiconductor, promising for optoelectronic devices. This process can be naturally represented as a computational modeling of disordered crystals. In details, the key component of such simulations is an evaluation of thermodynamic properties of the wide range of material-candidates, forming an enhanced space. Due to the space size, classical density functional theory (DFT) calculations were supplemented with a modern graph neural networks approach.
+Doping of inorganic lead halide perovskite CsPbI<sub>3</sub> aims to discover new stable semiconductor, promising for optoelectronic devices. This process can be naturally represented as a computational modeling of disordered crystals. In details, the key component of such simulations is an evaluation of thermodynamic properties of the wide range of material-candidates, forming an enhanced space. Due to the space size, classical density functional theory (DFT) calculations were supplemented with a modern graph neural networks (GNN) approach.
 <!--
 More details can be found in the [paper](link).
 
@@ -15,7 +15,7 @@ bibtex citation
 Dataset
 -----
 The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and various neural networks predictions.
-In our pipeline we used 
+In our pipeline, we used 
 * three pretraining mode: no pretraining, pretraining on the whole [Open Catalyst Project](https://opencatalystproject.org/index.html) (OCP) dataset and pretraining on a specially selected slice of the[ Aflow](https://www.aflowlib.org) database;
 * two architectures: *SchNet* and *Allegro* (for more informations see the [Models sections](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/edit/main/README.md#models));
 * and two model types: *both-both* and *element-both*, which means that for the first type the training set contains both Cd-doped systems and Zn-doped systems in both phases, while the for the second one (*element-both*) the training set contains only Cd-doped systems or Zn-doped (in both phases again).
@@ -31,7 +31,7 @@ For each combination, listed in the table below, we created 48 train-validation 
 | Aflow | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_aflowpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_aflowpr.pkl.gz)           |
 </div>
 
-Thus, each presented pandas dataframe contains metainformation, 
+Thus, each presented pandas dataframe contains atomic numbers (i.e. systems itself), metainformation columns, DFT-calculated energies, subsample indicators and 48 (mentioned earlier) GNN predictions. Atomic numbers, metainformation, DFT_energies and subsample indicators are identical in all datasets. More detailed description you can find in the table below.
 <div align="center">
 
 | ordinal number | column tag | content description |
