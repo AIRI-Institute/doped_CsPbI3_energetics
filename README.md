@@ -14,7 +14,13 @@ bibtex citation
 
 Dataset
 -----
-The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and various neural networks predictions. We used three pretraining mode: no pretraining, pretraining on the whole [Open Catalyst Project](https://opencatalystproject.org/index.html) (OCP) dataset and pretraining on a specially selected slice of the[ Aflow](https://www.aflowlib.org) database. Two models, *SchNet* and *Allegro*^ were trained on different subsamples and with/without pretraining. 
+The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and various neural networks predictions.
+In our pipeline we used 
+* three pretraining mode: no pretraining, pretraining on the whole [Open Catalyst Project](https://opencatalystproject.org/index.html) (OCP) dataset and pretraining on a specially selected slice of the[ Aflow](https://www.aflowlib.org) database;
+* two architectures: *SchNet* and *Allegro* (for more informations see the [Models sections](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/edit/main/README.md#models));
+* and two model types: *both-both* and *element-both*, which means that for the first type the training set contains both Cd-doped systems and Zn-doped systems in both phases, while the for the second one (*element-both*) the training set contains only Cd-doped systems or Zn-doped (in both phases again).
+For each combination, listed in the table below, we created 48 train-validation splits with 12 different distribution of defects and trained 48 (96 for *element-both*) models.
+
 
 <div align="center">
   
@@ -24,23 +30,8 @@ The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and va
 | OCP   | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_ocpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_ocpr.pkl.gz)           |
 | Aflow | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_aflowpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_aflowpr.pkl.gz)           |
 </div>
-<!--
-| **Sample** | **Size** |
-|:----------:|:--------:|
-|  train_val |    142   |
-|    test    |    60    |
-|  inference |   73760  |
--->
 
-Scripts
------
-
-
-Models
------
-* [SchNet: A continuous-filter convolutional neural network for modeling quantum interactions](https://arxiv.org/abs/1706.08566)
-* [Learning Local Equivariant Representations for Large-Scale Atomistic Dynamics (Allegro)](https://arxiv.org/abs/2204.05249)
-
+Thus, each presented pandas dataframe contains metainformation, 
 <div align="center">
 
 | ordinal number | column tag | content description |
@@ -69,3 +60,19 @@ Models
 |69-116| val_i_DFT | boolean flag showing whether the configuration is in the $i^{th}$ validation subset |
 |117| inWhichPart | tr_val, test, or inference (corresponds to the data usage within the approach proposed)|
 </div>
+
+<!--
+| **Sample** | **Size** |
+|:----------:|:--------:|
+|  train_val |    142   |
+|    test    |    60    |
+|  inference |   73760  |
+-->
+
+Scripts
+-----
+
+Models
+-----
+* [SchNet: A continuous-filter convolutional neural network for modeling quantum interactions](https://arxiv.org/abs/1706.08566)
+* [Learning Local Equivariant Representations for Large-Scale Atomistic Dynamics (Allegro)](https://arxiv.org/abs/2204.05249)
