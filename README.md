@@ -1,7 +1,6 @@
 # Cd- and Zn-doped CsPbI<sub>3</sub> Energetics: DFT-derived Properties and GNN-based Predictions
 
-Cd- and Zn-doping of inorganic lead halide perovskite CsPbI<sub>3</sub> aims to discover new sustainable semiconductor, promising for
-optoelectronic devices. This process can be naturally represented as a computational modeling of disordered crystals. Looking in more detail, the key component of such simulations is an evaluation of thermodynamic properties of the wide range of material-candidates, forming an enhanced space. Due to the space size, classical density functional theory (DFT) calculations were supplemented with a modern graph neural networks approach.
+Doping of inorganic lead halide perovskite CsPbI<sub>3</sub> aims to discover new stable semiconductor, promising for optoelectronic devices. This process can be naturally represented as a computational modeling of disordered crystals. In details, the key component of such simulations is an evaluation of thermodynamic properties of the wide range of material-candidates, forming an enhanced space. Due to the space size, classical density functional theory (DFT) calculations were supplemented with a modern graph neural networks approach.
 <!--
 More details can be found in the [paper](link).
 
@@ -15,15 +14,15 @@ bibtex citation
 
 Dataset
 -----
-The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and various neural networks predictions. Two models, *SchNet* and *Allegro*^ were trained on different subsamples and with/without pretraining to illustrate ???
+The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and various neural networks predictions. We used three pretraining mode: no pretraining, pretraining on the whole [Open Catalyst Project](https://opencatalystproject.org/index.html) (OCP) dataset and pretraining on a specially selected slice of the[ Aflow](https://www.aflowlib.org) database. Two models, *SchNet* and *Allegro*^ were trained on different subsamples and with/without pretraining. 
 
 <div align="center">
   
 |   pretraining mode  | both-both       | element-both    |
 |-------|-----------------|-----------------|
 | non-pretrained  | [SchNet](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_schnet_non-pr.pkl.gz), [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_non-pr.pkl.gz) | [SchNet](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_schnet_non-pr.pkl.gz), [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_non-pr.pkl.gz) |
-| [OCP](https://opencatalystproject.org/index.html)   | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_ocpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_ocpr.pkl.gz)           |
-| [aflow](https://www.aflowlib.org) | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_aflowpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_aflowpr.pkl.gz)           |
+| OCP   | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_ocpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_ocpr.pkl.gz)           |
+| Aflow | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/both_both_allegro_aflowpr.pkl.gz)           | [Allegro](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data/nn%20inference/element_both_allegro_aflowpr.pkl.gz)           |
 </div>
 <!--
 | **Sample** | **Size** |
