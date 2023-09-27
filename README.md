@@ -71,6 +71,7 @@ Thus, each presented pandas dataframe contains atomic numbers (i.e. systems itse
 
 Scripts
 -----
+The repository also contains a [Jupyter Notebook](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/blob/main/data%20processing.ipynb) file with utils and visualisation scripts. You can calculate and visualise energy distributions, RMSEs, predictions, etc.
 
 Models
 -----
