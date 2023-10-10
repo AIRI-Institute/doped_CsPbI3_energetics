@@ -1,6 +1,6 @@
 # Cd- and Zn-doped CsPbI<sub>3</sub> Energetics: DFT-derived Properties and GNN-based Predictions
 
-Doping of inorganic lead halide perovskite CsPbI<sub>3</sub> aims to discover new stable semiconductor, promising for optoelectronic devices. This process can be naturally represented as a computational modeling of disordered crystals. In details, the key component of such simulations is an evaluation of thermodynamic properties of the wide range of material-candidates, forming an enhanced space. Due to the space size, classical density functional theory (DFT) calculations were supplemented with a modern graph neural networks (GNN) approach.
+Doping of inorganic lead halide perovskite $\gamma$-CsPbI<sub>3</sub> is aimed at discovering a new stable semiconductor promising for optoelectronic devices. This process can naturally be represented as computer modeling and prediction of the properties of disordered crystal structures. In more detail, a key component of such modeling is the assessment of the thermodynamic properties of a wide range of structural realizations of the candidate material, which forms an expanded composition/configuration space. Due to the size of such spaces, the application of density functional theory (DFT) calculations is accompanied by modern data-driven solutions, e.g. those based on graph neural network (GNN) architectures.
 <!--
 More details can be found in the [paper](link).
 
@@ -14,7 +14,7 @@ bibtex citation
 
 Dataset
 -----
-The dataset contains  Cd- and Zn-doped $\gamma$-CsPbI<sub>3</sub> systems and various neural networks predictions.
+The dataset contains  Cd- and Zn-doped CsPbI<sub>3</sub> systems in two polymorphic modifications and predictions of their formation energies made using various GGNs trained on the DFT derived properties.
 In our pipeline, we used 
 * three pretraining mode: no pretraining, pretraining on the whole [Open Catalyst Project](https://opencatalystproject.org/index.html) (OCP) dataset and pretraining on a specially selected slice of the[ Aflow](https://www.aflowlib.org) database;
 * two architectures: *SchNet* and *Allegro* (for more informations see the [Models sections](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/edit/main/README.md#models));
