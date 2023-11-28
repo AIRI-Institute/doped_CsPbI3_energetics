@@ -1,15 +1,21 @@
 # Cd- and Zn-doped CsPbI<sub>3</sub> Energetics: DFT-derived Properties and GNN-based Predictions
 
-Doping of inorganic lead halide perovskite $\gamma$-CsPbI<sub>3</sub> is aimed at discovering a new stable semiconductor promising for optoelectronic devices. This process can naturally be represented as computer modeling and prediction of the properties of disordered crystal structures. In more detail, a key component of such modeling is the assessment of the thermodynamic properties of a wide range of structural realizations of the candidate material, which forms an expanded composition/configuration space. Due to the size of such spaces, the application of density functional theory (DFT) calculations is accompanied by modern data-driven solutions, e.g. those based on graph neural network (GNN) architectures.
-<!--
-More details can be found in the [paper](link).
+Doping of inorganic lead halide perovskite $\gamma$-CsPbI<sub>3</sub> is aimed at discovering a new stable semiconductor promising for optoelectronic devices. This process can naturally be represented as computer modeling and prediction of the properties of disordered crystal structures. In more detail, a key component of such modeling is the assessment of the thermodynamic properties of a wide range of structural realizations of the candidate material, which forms an expanded composition/configuration space. Due to the size of such spaces, the application of density functional theory (DFT) calculations is accompanied by modern data-driven solutions, e.g. those based on graph neural network (GNN) architectures.   
+More details can be found in the [paper](https://doi.org/10.1016/j.commatsci.2023.112672).
 
 If you are using this dataset in your research paper, please cite us as
 ```
-bibtex citation
+@article{EREMIN2024112672,
+title = {Graph neural networks for predicting structural stability of Cd- and Zn-doped γ-CsPbI3},
+journal = {Computational Materials Science},
+volume = {232},
+pages = {112672},
+year = {2024},
+issn = {0927-0256},
+doi = {https://doi.org/10.1016/j.commatsci.2023.112672},
+url = {https://www.sciencedirect.com/science/article/pii/S0927025623006663},
+author = {Roman A. Eremin and Innokentiy S. Humonen and Alexey A. Kazakov and Vladimir D. Lazarev and Anatoly P. Pushkarev and Semen A. Budennyy}}
 ```
--->
-
 ![graphical abstract](figures/toc.png)
 
 Dataset
