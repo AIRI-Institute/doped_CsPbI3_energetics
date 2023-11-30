@@ -22,7 +22,7 @@ Dataset
 -----
 The dataset contains  Cd- and Zn-doped CsPbI<sub>3</sub> systems in two polymorphic modifications and predictions of their formation energies made using various GGNs trained on the DFT derived properties.
 In our pipeline, we used 
-* three pretraining mode: no pretraining, pretraining on the whole [Open Catalyst Project](https://opencatalystproject.org/index.html) (OCP) dataset and pretraining on a specially selected slice of the[ Aflow](https://www.aflowlib.org) database;
+* three pretraining modes: no pretraining, pretraining on the whole [Open Catalyst Project](https://opencatalystproject.org/index.html) (OCP) dataset and pretraining on a specially selected slice of the[ Aflow](https://www.aflowlib.org) database;
 * two architectures: *SchNet* and *Allegro* (for more informations see the [Models sections](https://github.com/AIRI-Institute/doped_CsPbI3_energetics/edit/main/README.md#models));
 * and two model types: *both-both* and *element-both*, which means that for the first type the training set contains both Cd-doped systems and Zn-doped systems in both phases, while the for the second one (*element-both*) the training set contains only Cd-doped systems or Zn-doped (in both phases again).
 For each combination, listed in the table below, we created 48 train-validation splits with 12 different distribution of defects and trained 48 (96 for *element-both*) models.
